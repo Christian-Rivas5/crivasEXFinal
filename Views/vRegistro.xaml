@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="crivasEXFinal.Views.vRegistro"
+             Title="vRegistro"
+             NavigationPage.HasNavigationBar="False">
+    
+    <Grid RowDefinitions=".3*,.7*">
+        <Image Aspect="AspectFill" Source="logoac.jpg"/>
+        <Grid BackgroundColor="Blue" Opacity=".9"/>
+        <Grid ColumnDefinitions="*,*">
+            <Image Aspect="AspectFit" 
+               HeightRequest="120"
+               Source="logoac.jpg"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <RoundRectangle Margin="-5,-30,-5,-2"
+                        CornerRadius="30,30,0,0"
+                        Fill="White"/>
+            <VerticalStackLayout Margin="30,0,30,0">
+                <Label FontAttributes="Bold"
+                   
+                   FontSize="Medium"
+                   Text="Creacion de Cuenta"
+                   TextColor="Black"/>
+
+                <Grid Margin="0,30,0,0" ColumnDefinitions=".2*, .8*">
+                    <RoundRectangle BackgroundColor="#EDEBF6"
+                                CornerRadius="10"
+                                HeightRequest="60"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                WidthRequest="60"/>
+
+
+                    <Entry Grid.Column="1"
+                           Placeholder="Nombre"
+                           Text="Nombre 1"
+                           VerticalOptions="Center"/>
+
+
+                </Grid>
+                <Grid Margin="0,30,0,0" ColumnDefinitions=".2*, .8*">
+                    <RoundRectangle BackgroundColor="#EDEBF6"
+                                CornerRadius="10"
+                                HeightRequest="60"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                WidthRequest="60"/>
+                    
+                    
+                    <Entry Grid.Column="1"
+                           Placeholder="Email"
+                           Text="americancoleleg.edu.ec"
+                           VerticalOptions="Center"/>
+
+
+                </Grid>
+                <Grid Margin="0,30,0,0" ColumnDefinitions=".2*, .8*">
+                    <RoundRectangle BackgroundColor="#EDEBF6"
+                CornerRadius="10"
+                HeightRequest="60"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="60"/>
+                    <Entry Grid.Column="1"
+                       Placeholder="contraseña"
+                       IsPassword="True"
+                       Text="12345"
+                       VerticalOptions="Center"/>
+
+
+                </Grid>
+                <Button Margin="0,20,0,0"
+                    BackgroundColor="Blue"
+                    HeightRequest="60"
+                    Text="Crear Usuario"
+                    TextColor="#FBF6FD"/>
+                
+            </VerticalStackLayout>
+
+        </Grid>
+    </Grid>
+</ContentPage>
